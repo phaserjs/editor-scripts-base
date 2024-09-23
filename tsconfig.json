@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "target": "ESNext",
+        "declaration": true,
+        "outDir": "out",
+        "declarationDir": "types",
+        "strict": true,
+        "types": ["phaser"]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

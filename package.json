@@ -1,0 +1,33 @@
+{
+	"name": "@phaserjs/editor-scripts-base",
+	"version": "1.0.0",
+	"description": "The base scripts for Phaser Editor.",
+	"main": "out/index.js",
+	"types": "types/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/phaserjs/editor-scripts-core.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "tsc --watch",
+		"prestart": "npm run clean",
+		"clean": "rm -Rf out/* types/* browser/*",
+		"build": "tsc && npm run browser",
+		"browser": "node build-browser.js",
+		"prebuild": "npm run clean",
+		"prepare": "npm run build"
+	},
+	"keywords": [
+		"scripts",
+		"behaviors",
+		"games",
+		"phaser"
+	],
+	"author": "Phaser Editor",
+	"license": "MIT",
+	"devDependencies": {
+		"phaser": "^3.85.2",
+		"typescript": "^5.2.2"
+	}
+}
