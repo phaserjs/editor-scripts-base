@@ -8,7 +8,7 @@ export default class ScriptNode {
     protected getActionTargetObject(args: any[]): any;
     get scene(): Phaser.Scene;
     get gameObject(): Phaser.GameObjects.GameObject | undefined;
-    get parent(): Phaser.GameObjects.GameObject | ScriptNode | Phaser.Scene;
+    get parent(): ScriptNode | Phaser.Scene | Phaser.GameObjects.GameObject;
     get children(): ScriptNode[];
     add(child: ScriptNode): void;
     executeChildren(...args: any[]): void;
