@@ -22,6 +22,11 @@ function processJSFiles(fromFolder, toFolder) {
 
 	for (const file of files) {
 
+		if (file === "index.js") {
+
+			continue;
+		}
+
 		const from = path.join(fromFolder, file);
 		const to = path.join(toFolder, file);
 
