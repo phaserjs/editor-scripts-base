@@ -1,4 +1,3 @@
-/// <reference types="./phaser" />
 export default class UserComponent {
     /**
      * @param gameObject The entity.

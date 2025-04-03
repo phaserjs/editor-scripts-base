@@ -1,4 +1,3 @@
-/// <reference types="./phaser" />
 export default class ScriptNode {
     private _scene;
     private _gameObject?;
