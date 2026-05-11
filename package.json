@@ -1,6 +1,6 @@
 {
 	"name": "@phaserjs/editor-scripts-base",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "The base scripts for Phaser Editor.",
 	"main": "out/index.js",
 	"types": "types/index.d.ts",
