@@ -1,3 +1,4 @@
+import Phaser from "phaser";
 import ActionTargetComp from "./ActionTargetComp";
 
 export default class ScriptNode {

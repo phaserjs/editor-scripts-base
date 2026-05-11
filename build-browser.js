@@ -38,6 +38,9 @@ function processJSFiles(fromFolder, toFolder) {
 			return `from "${p1}.js"`;
 		});
 
+		// Remove Phaser import for browser output if present.
+		content = content.replace(/^import Phaser from "phaser\.js";\r?\n?/m, "");
+
 		console.log(`Writing ${to}`);
 		fs.writeFileSync(to, content);
 	}

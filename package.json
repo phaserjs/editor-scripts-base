@@ -27,7 +27,7 @@
 	"author": "Phaser Editor",
 	"license": "MIT",
 	"devDependencies": {
-		"phaser": "^4.0.0-rc.1",
+		"phaser": "^4.1.0",
 		"typescript": "^5.2.2"
 	}
 }

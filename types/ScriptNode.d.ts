@@ -1,3 +1,5 @@
+/// <reference types="./phaser" />
+import Phaser from "phaser";
 export default class ScriptNode {
     private _scene;
     private _gameObject?;
@@ -7,7 +9,7 @@ export default class ScriptNode {
     protected getActionTargetObject(args: any[]): any;
     get scene(): Phaser.Scene;
     get gameObject(): Phaser.GameObjects.GameObject | undefined;
-    get parent(): ScriptNode | Phaser.Scene | Phaser.GameObjects.GameObject;
+    get parent(): Phaser.GameObjects.GameObject | Phaser.Scene | ScriptNode;
     get children(): ScriptNode[];
     add(child: ScriptNode): void;
     executeChildren(...args: any[]): void;
